@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Watch Anime List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>My To-Watch Anime List</h1>
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="form-section">
+                <form id="animeform">
+                    <div class="form-section-inner">
+                        <label for="animeTitleInput">Anime Title</label>
+                        <input type="text" id=animeTitleInput required placeholder="Type an anime name">
+                    </div>
+                    <div class="form-section-inner">
+                        <label for="animeCat">Anime Category</label>
+                        <select id="animeCat" required>
+
+                            <option value="" disabled selected>Select an categories</option>
+                        </select>
+                    </div>
+                    <div class="form-section-inner">
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-section">
+                <h2>My To-Watch Anime List</h2>
+                <table id="animeListTable">
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
